@@ -1,11 +1,12 @@
+<% site.posts.forEach(function(post) { %>
 <div id="main">
     <div id="content">
         <div class="blog-index">
             <article>
                 <header>
-                    <h1 class="entry-title"><a href="/blog/2016/05/29/socket-protocols/"><%- site.pages[0].title %></a></h1>
+                    <h1 class="entry-title"><a href="/blog/2016/05/29/socket-protocols/"><%- post.title %></a></h1>
                         <p class="meta">
-                            <time datetime="<%- site.pages[0].date %>" pubdate data-updated="true">May 29<span>th</span>, 2016</time>
+                            <%- time(post.date) %>
                             | <a href="/blog/2016/05/29/socket-protocols/#disqus_thread" data-disqus-identifier="http://lokiastari.com/blog/2016/05/29/socket-protocols/">Comments</a>
                         </p>
                 </header>
@@ -13,3 +14,4 @@
         </div>
     </div>
 </div>
+<% }); %>
