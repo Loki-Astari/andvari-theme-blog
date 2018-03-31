@@ -1,4 +1,5 @@
 {
-    "type": "Page",
-    "Host": "Thors Anvil"
+    "title": "Name Your Site",
+    "description": "Simple Description",
+    "menu": null
 }
