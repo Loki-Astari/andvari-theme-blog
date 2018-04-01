@@ -1,0 +1,18 @@
+<div id="main">
+    <div id="content">
+        <div class="blog-index">
+            <article>
+                <header>
+                    <h1 class="entry-title"><a href="/blog/2016/05/29/socket-protocols/"><%- post.title %></a></h1>
+                        <p class="meta">
+                            <%- time(post.date) %>
+                            <% if (config.comment && post.comments) { %>
+                                <%- comment(post) %>
+                            <% } %>
+                        </p>
+                </header>
+                <%- excerpt(config.excerptSize, post) %>
+            </article>
+        </div>
+    </div>
+</div>
