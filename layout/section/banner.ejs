@@ -14,7 +14,7 @@
     <div class="header-right">
         <ul class="main-navigation">
             <% config.menu.forEach(function(item) { %>
-                <div <% if (item.active) { %> class="selected" <% } %> >
+                <div <% if (item.name == highlite) { %> class="selected" <% } %> >
                     <li><a href="<%- item.url %>"><%- item.name %></a></li></div><div class="spacer">
                 </div>
             <% }); %>
