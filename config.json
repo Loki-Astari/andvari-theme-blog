@@ -1,4 +1,10 @@
 {
-    "type": "Page",
-    "Host": "Thors Anvil"
+    "author":       "The Copy Right Owner",
+    "title":        "Name Your Site",
+    "description":  "Simple Description",
+    "menu":         null,
+    "disque": {
+        "site":     "RegisterYourSite",
+        "count":    false
+    }
 }

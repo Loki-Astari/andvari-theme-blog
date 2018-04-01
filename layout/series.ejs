@@ -1,0 +1,12 @@
+<div>
+    <article role="article">
+        <header>
+            <h1 class="entry-title">Series</h1>
+        </header>
+        <div id="blog-archives">
+            <% site.series.forEach(function(series) { %>
+                <%- include('section/series', {series: series}); %>
+            <% }); %>
+        </div>
+    </article>
+</div>

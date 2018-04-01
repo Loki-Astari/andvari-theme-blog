@@ -1,0 +1,9 @@
+<header>
+    <h1 class="entry-title"><a href="<%- post.path %>"><%- post.title %></a></h1>
+        <p class="meta">
+            <%- time(post.date) %>
+            <% if (config.comment && post.comments) { %>
+                <%- comment(post) %>
+            <% } %>
+        </p>
+</header>

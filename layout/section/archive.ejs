@@ -1,0 +1,15 @@
+<article>
+    <h1><a href="<%- post.path %>"><%- post.title %></a></h1>
+    <%- time(post.date, '"<span class=\'month\'>"mmm"</span> <span class=\'day\'>"dd "</span> <span class=\'year\'>"yyyy"</span>"') %>
+    <% if (post.categories && post.categories.length != 0) { %>
+    <footer>
+        <span class="categories">
+            posted in
+            <% post.categories.forEach(function(category) { %>
+            <a class='category' href='/blog/categories/<%- category %>/'><%- category %></a>,
+            <% }); %>
+        </span>
+    </footer>
+    <% } %>
+</article>
+
