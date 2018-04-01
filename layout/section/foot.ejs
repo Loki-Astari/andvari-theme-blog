@@ -12,7 +12,14 @@
       var disqus_shortname = '<%- config.disque.site %>';
 
 
+<% if (config.disque.count) { %>
         var disqus_script = 'count.js';
+<% } else { %>
+        var disqus_identifier = '<%- page.permlink %>';
+        var disqus_url        = '<%- page.permlink %>';
+        var disqus_script = 'embed.js';
+<% } %>
+
 
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

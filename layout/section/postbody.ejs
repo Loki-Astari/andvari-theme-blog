@@ -1,0 +1,21 @@
+<div>
+    <article class="hentry" role="article">
+
+This is article 4 of the 4 part Series: "<span style="color:red">Sockets</span>".<br>
+See side panel "Series" for details.<br><br>
+
+    <%- include('post-header', {post: page}) %>
+    <%- include('render', {post: page, postSize: -1}) %>
+    <%- include('post-footer', {post: page}) %>
+
+    </article>
+    <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </section>
+</div>
+
+
+

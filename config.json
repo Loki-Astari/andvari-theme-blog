@@ -1,9 +1,10 @@
 {
-    "author": "The Copy Right Owner",
-    "title": "Name Your Site",
-    "description": "Simple Description",
-    "menu": null,
+    "author":       "The Copy Right Owner",
+    "title":        "Name Your Site",
+    "description":  "Simple Description",
+    "menu":         null,
     "disque": {
-        "site":   "RegisterYourSite"
+        "site":     "RegisterYourSite",
+        "count":    false
     }
 }

@@ -1,3 +1,8 @@
 <% site.posts.forEach(function(post) { %>
-<%- include('excerpt', {post: post}); %>
+    <div class="blog-index">
+        <article>
+            <%- include('post-header', {post: post}) %>
+            <%- include('render', {post: post, postSize: config.excerptSize}); %>
+        </article>
+    </div>
 <% }); %>
