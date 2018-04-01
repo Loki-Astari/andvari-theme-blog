@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-<% config.disque.count = true; %>
-<%- include('section/head'); %>
-<body>
-<%- include('section/banner', {highlite: 'blog'}); %>
-<div id="main">
-    <div id="content">
-        <%- include('section/blogroll'); %>
+<% site.posts.forEach(function(post) { %>
+    <div class="blog-index">
+        <article>
+            <%- include('section/post-header', {post: post}) %>
+            <%- include('section/render', {post: post, postSize: config.excerptSize}); %>
+        </article>
     </div>
-</div>
-<%- include('section/foot'); %>
-<% config.disque.count = false; %>
-</body>
-</html>
+<% }); %>

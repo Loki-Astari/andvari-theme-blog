@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
-<%- include('section/head'); %>
-<body>
-<%- include('section/banner', {highlite: 'about'}); %>
-<div id="main">
-    <div id="content">
-        <%- include('section/about'); %>
-    </div>
+<div>
+    <article class="hentry" role="article">
+
+    <%- include('section/render', {post: page, postSize: -1}) %>
+
+    </article>
+    <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </section>
 </div>
-<%- include('section/foot'); %>
-</body>
-</html>
