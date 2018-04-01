@@ -1,5 +1,9 @@
 {
+    "author": "The Copy Right Owner",
     "title": "Name Your Site",
     "description": "Simple Description",
-    "menu": null
+    "menu": null,
+    "disque": {
+        "site":   "RegisterYourSite"
+    }
 }

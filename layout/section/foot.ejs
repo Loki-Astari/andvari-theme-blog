@@ -1,5 +1,15 @@
+<footer role="contentinfo"><hr>
+    <p>
+        Copyright &copy; 2017 - <%- config.author %> -
+        <span class="credit">Powered by <a href="http://andvariToro.com">Andvari</a></span>
+        using the <a href="<%- config.themeGit %>">andvari-<%- config.theme %></a> theme</span>
+    </p>
+
+</footer>
+
+<% if (config.disqueSite) { %>
 <script type="text/javascript">
-      var disqus_shortname = 'lokiastari';
+      var disqus_shortname = '<%- config.disque.site %>';
 
 
         var disqus_script = 'count.js';
@@ -10,3 +20,4 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
+<% } %>
