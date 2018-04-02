@@ -6,7 +6,7 @@
         <span class="categories">
             posted in
             <% post.categories.forEach(function(category) { %>
-            <a class='category' href='/blog/categories/<%- category %>/'><%- category %></a>,
+            <a class="category" href="<%-permlink('categories/' + category + '/index.html', 'category') %>"><%- category %></a>,
             <% }); %>
         </span>
     </footer>
