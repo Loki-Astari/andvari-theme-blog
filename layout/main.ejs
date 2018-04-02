@@ -1,8 +1,6 @@
 <% site.posts.forEach(function(post) { %>
-    <div class="blog-index">
         <article>
             <%- include('section/post-header', {post: post}) %>
             <%- include('section/render', {post: post, postSize: config.excerptSize}); %>
         </article>
-    </div>
 <% }); %>
