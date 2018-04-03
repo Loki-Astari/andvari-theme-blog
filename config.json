@@ -3,6 +3,14 @@
     "title":        "Name Your Site",
     "description":  "Simple Description",
     "menu":         null,
+    "sidebar": ["posts", "twitter", "github"],
+    "twitter": {
+        "user": "Your Twitter User"
+    },
+    "github": {
+        "user": "Your Github User",
+        "count": 5
+    },
     "disque": {
         "site":     "RegisterYourSite",
         "count":    false
