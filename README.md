@@ -33,7 +33,10 @@ You should probably override these in your blog's config.json file.
         * title:       Title of the site displayed in the banner.
         * description: Displayed in the banner just under the title.
         * menu:        An array of items to be displayed in the banner.
-        *              Each item has the form {"name": "A name to display", "url": "The page it will go to when pushed"}
+        *              Each item has the form:
+        *                     {    "name": "A name to display", 
+        *                          "url": "The page it will go to when pushed"
+        *                     }
         *              If the name is also the name of the directory where the file is placed it will be highlited.
         * sidebar:     An array of know sidebars.
         *              Currently Andvari has no sidebar's but this may change in the future.
