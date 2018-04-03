@@ -11,6 +11,7 @@
         "user": "Your Github User",
         "count": 5
     },
+    "commentSite": "disque",
     "disque": {
         "site":     "RegisterYourSite",
         "count":    false
