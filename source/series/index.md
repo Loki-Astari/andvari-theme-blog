@@ -1,4 +1,0 @@
----
-layout: series
-menu:   series
----

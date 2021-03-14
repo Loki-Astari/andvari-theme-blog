@@ -1,8 +1,0 @@
-<section>
-    <h1>Posts</h1>
-    <ul id="recent_posts">
-        <% site.posts.slice(0, 5).forEach(function(post) { %>
-            <li class="post"><a href="<%- post.path %>"><%- post.title %></a></li>
-        <% }); %>
-    </ul>
-</section>

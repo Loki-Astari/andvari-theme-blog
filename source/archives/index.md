@@ -1,4 +1,0 @@
----
-layout: archives
-menu:   archives
----
